@@ -200,18 +200,46 @@
             </div>
             
             <!-- Hidden Message that appears after click -->
-            <div id="finalMessage" class="fixed inset-0 flex flex-col items-center justify-center bg-black/80 backdrop-blur-sm z-50 transition-opacity duration-1000 opacity-0 pointer-events-none">
-                <h1 class="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 mb-4 text-center px-4 neon-text">
-                    HAPPY NEW YEAR
-                </h1>
-                <h2 class="text-4xl md:text-6xl font-bold text-white mb-8">2026</h2>
-                <p class="text-xl md:text-2xl text-white max-w-lg text-center leading-relaxed px-6">
-                    ขอให้ปีนี้ใจดีกับอ้วนมากๆ ร่ำรวยเงินทอง <br>
+            <div id="finalMessage" class="fixed inset-0 flex flex-col items-center justify-center bg-black/90 backdrop-blur-md z-50 transition-opacity duration-1000 opacity-0 pointer-events-none overflow-y-auto py-10">
+                <div class="text-center max-w-4xl px-4 w-full">
+                    <h1 class="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 mb-2 neon-text">
+                        HAPPY NEW YEAR
+                    </h1>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">2026</h2>
+
+                    <!-- Photo Gallery (Moved Inside Here) -->
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 mb-8">
+                        <!-- รูปที่ 1 -->
+                        <div class="group transform -rotate-3 hover:rotate-0 transition duration-500 hover:scale-105 hover:z-10">
+                            <div class="bg-white p-2 shadow-xl rounded-sm max-w-[200px]">
+                                <img src="https://lh3.googleusercontent.com/d/1OjiXvMNkrXPsNkDB35deDJsA-aon8DYt" alt="Memory 1" class="w-full h-36 object-cover rounded-sm filter sepia-[.3] group-hover:sepia-0 transition">
+                            </div>
+                        </div>
+
+                        <!-- รูปที่ 2 -->
+                        <div class="group transform rotate-2 hover:rotate-0 transition duration-500 hover:scale-110 hover:z-20">
+                            <div class="bg-white p-2 shadow-xl rounded-sm max-w-[200px]">
+                                <img src="https://lh3.googleusercontent.com/d/1UBntsPSf4RBdKnfUSIMRDaDoZYXCIFhE" alt="Memory 2" class="w-full h-36 object-cover rounded-sm filter sepia-[.3] group-hover:sepia-0 transition">
+                            </div>
+                        </div>
+
+                        <!-- รูปที่ 3 -->
+                        <div class="group transform -rotate-2 hover:rotate-0 transition duration-500 hover:scale-105 hover:z-10">
+                            <div class="bg-white p-2 shadow-xl rounded-sm max-w-[200px]">
+                                <img src="https://lh3.googleusercontent.com/d/1gE4jQCMFijBFPlKA5t60h7iWjCrixTQs" alt="Memory 3" class="w-full h-36 object-cover rounded-sm filter sepia-[.3] group-hover:sepia-0 transition">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-xl md:text-2xl text-white max-w-lg mx-auto leading-relaxed mb-8">
+                        ขอให้ปีนี้ใจดีกับอ้วนมากๆ ร่ำรวยเงินทอง <br>
                     และคิดสิ่งใดก็ขอให้ได้ดังที่คิด นะ :)
-                </p>
-                <button onclick="closeOverlay()" class="mt-12 text-gray-400 hover:text-white underline">
-                    ปิดหน้าต่าง
-                </button>
+                    </p>
+                    
+                    <button onclick="closeOverlay()" class="text-gray-400 hover:text-white underline text-sm pb-10">
+                        ปิดหน้าต่าง
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -387,5 +415,4 @@
 
     </script>
 </body>
-
 </html>
